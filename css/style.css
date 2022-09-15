@@ -37,7 +37,7 @@ body{
     transform: skewX(-30deg);
 }
 
-.header .nav{
+.header a{
     width: 15%;
     color: whitesmoke;
     font-size: 20px;
@@ -45,9 +45,10 @@ body{
     font-family: 'Times New Roman', Times, serif;
     transform: skewX(30deg);
     cursor: pointer;
+    text-decoration: none;
 }
 
-.header .nav:hover{
+.header a:hover{
     color: white;
     background-color: red;
 }
