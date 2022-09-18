@@ -1,11 +1,11 @@
-// window.onload = function() {
-//     navbarClicked('home');
-//   };
-  
-function navbarClicked(page){
+window.onload = function() {
+    navbarClicked('home');
+  };
+
+function navbarClicked(page) {
     let content = document.getElementById('content')
-    if(page == 'home'){
-      content.innerHTML = `
+    if (page == 'home') {
+        content.innerHTML = `
         <div class="image-div">
           <img src="./assets/my.jpg" class="profile-img"/>
         </div>
@@ -39,8 +39,8 @@ function navbarClicked(page){
           </a>
         </div>
     `
-    } else if(page === 'skills'){
-      content.innerHTML = `
+    } else if (page === 'skills') {
+        content.innerHTML = `
       <div class="skills">
           <div class="skill-card">
             <p class="skill-name">Html5</p>
@@ -126,7 +126,7 @@ function navbarClicked(page){
             </div>      
         </div>
       `
-    } else if(page === 'experience'){
+    } else if (page === 'experience') {
         content.innerHTML = `
             <div class="experience">
               <div class="card">
@@ -152,4 +152,4 @@ function navbarClicked(page){
     } else {
         content.innerHTML = '<div></div>'
     }
-  }
+}

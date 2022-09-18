@@ -1,10 +1,9 @@
-
-body{
-    margin:0
+body {
+    margin: 0
 }
 
 
-.main-body{
+.main-body {
     position: relative;
     background-image: url(../assets/white-paper-texture.jpg);
     height: 100vh;
@@ -15,7 +14,7 @@ body{
 
 
 
-.upper-background{
+.upper-background {
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -25,7 +24,7 @@ body{
     opacity: 0.3;
 }
 
-.header{
+.header {
     position: absolute;
     display: flex;
     height: 70px;
@@ -36,7 +35,7 @@ body{
     transform: skewX(-30deg);
 }
 
-.header a{
+.header a {
     width: 15%;
     color: whitesmoke;
     font-size: 20px;
@@ -47,12 +46,26 @@ body{
     text-decoration: none;
 }
 
-.header a:hover{
+.header a:hover {
     color: white;
     background-color: red;
 }
 
-.content{
+
+.footer {
+    margin: 20px auto 10px;
+    width: 80%;
+}
+
+.footer a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+
+
+.content {
     width: 100%;
     margin: auto 0;
     display: flex;
@@ -60,12 +73,41 @@ body{
     position: relative;
 }
 
-.content .skills{
+/* home */
+.info {
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4b4b4b;
+    margin: auto;
+}
+
+.image-div {
+    width: 80%;
+    margin: auto;
+}
+
+.profile-img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    z-index: 1000000;
+    border-radius: 50%;
+    border: 3px solid grey;
+}
+
+.info p {
+    margin: 5px 0;
+    width: 60%;
+}
+
+/* skill */
+
+.content .skills {
     margin-right: 10%;
     margin-left: auto;
 }
 
-.content .skill-card{
+.content .skill-card {
     width: 350px;
     font-size: 20px;
     background-color: whitesmoke;
@@ -76,69 +118,18 @@ body{
     position: relative;
 }
 
-.content .skill-card .skill-name{
+.content .skill-card .skill-name {
     margin: 0;
     padding: 10px;
 }
 
-.content .skill-card:hover .skill-name {
-    margin: 0;
-}
-
-.content .skill-card .skill-points{
+.content .skill-card .skill-points {
     margin: 0 0 0 auto;
     padding: 10px;
-    background-color: #686868;
-    opacity: 0;
-    transition: opacity ease-in-out 1s;
-
-}
-
-.content .skill-card:hover .skill-points {
-    margin: 0 0 0 auto;
+    background-color: #8b8b8b;
     opacity: 1;
-    transition: opacity ease-in 1s;
-    
+
 }
-
-
-.info{
-    width: 80%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #4b4b4b;
-    margin: auto;
-}
-
-.image-div{
-    width: 80%;
-    margin: auto;
-}
-
-.profile-img{
-    object-fit: cover;
-    height: 250px;
-    width:250px;
-    z-index: 1000000;
-    border-radius: 50%;
-    border: 3px solid grey;
-}
-
-.info p{
-    margin: 5px 0;
-    width: 60%;
-}
-
-.footer{
-    margin: 20px auto 10px;
-    width: 80%;
-}
-
-.footer a{
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-
 
 /* stars */
 
@@ -150,14 +141,15 @@ body{
     margin-left: .9em;
     margin-right: .9em;
     margin-bottom: 1.2em;
-    border-right:  .3em solid transparent;
-    border-bottom: .7em  solid #FC0;
-    border-left:   .3em solid transparent;
+    border-right: .3em solid transparent;
+    border-bottom: .7em solid #FC0;
+    border-left: .3em solid transparent;
     /* Controlls the size of the stars. */
     font-size: 12px;
-  }
+}
 
-  .star:before, .star:after {
+.star:before,
+.star:after {
     content: '';
     display: block;
     width: 0;
@@ -165,52 +157,55 @@ body{
     position: absolute;
     top: .6em;
     left: -1em;
-    border-right:  1em solid transparent;
-    border-bottom: .7em  solid #FC0;
-    border-left:   1em solid transparent;
+    border-right: 1em solid transparent;
+    border-bottom: .7em solid #FC0;
+    border-left: 1em solid transparent;
     transform: rotate(-35deg);
-  }
-  
-  .star:after {  
+}
+
+.star:after {
     transform: rotate(35deg);
-  }
+}
+
+/* experience */
 
 
-  .experience{
+.experience {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
     margin: auto;
-  }
+}
 
-  .card{
+.card {
     position: relative;
-    width:25%;
+    width: 25%;
     padding: 20px;
     background-color: whitesmoke;
     border: 3px solid grey;
     text-align: center;
-  }
+}
 
-  .card img{
+.card img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border-width: 3px 3px 0 ;
+    border-width: 3px 3px 0;
     border-style: groove;
     border-color: grey;
     position: absolute;
-    object-fit:  contain;
+    object-fit: contain;
     top: -50px;
     left: 50%;
     transform: translate(-50%);
     background-color: aliceblue;
-  }
+}
 
-.card  h1{
+.card h1 {
     margin: 30px 20px 10px;
 }
-.card h5{
+
+.card h5 {
     margin: 10px;
 }
